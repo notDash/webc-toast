@@ -1,6 +1,6 @@
 {
   "name": "webc-toast",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "Teh Toast component bases on webcomponent",
   "main": "dist/webc-toast.cjs.js",
   "module": "dist/webc-toast.esm.js",
