@@ -1,5 +1,5 @@
 {
-  "name": "web-toast",
+  "name": "webc-toast",
   "version": "1.0.0",
   "description": "Teh Toast component bases on webcomponent",
   "main": "dist/webc-toast.cjs.js",
