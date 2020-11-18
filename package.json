@@ -1,0 +1,34 @@
+{
+  "name": "web-toast",
+  "version": "1.0.0",
+  "description": "Teh Toast component bases on webcomponent",
+  "main": "dist/webc-toast.cjs.js",
+  "module": "dist/webc-toast.esm.js",
+  "browser": "dist/webc-toast.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -w --config rollup.config.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notDash/webc-toast.git"
+  },
+  "keywords": [
+    "web",
+    "component"
+  ],
+  "author": "lsy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notDash/webc-toast/issues"
+  },
+  "homepage": "https://github.com/notDash/webc-toast#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

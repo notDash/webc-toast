@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer-class {
+            z-index: 10;
+        }
+        .outer-class__hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div>Autonomous custom elements 是独立的元素，它不继承其他内建的HTML元素。你可以直接把它们写成HTML标签的形式，来在页面上使用。例如 <popup-info>，或者是document.createElement("popup-info")这样。
+        Customized built-in elements 继承自基本的HTML元素。在创建时，你必须指定所需扩展的元素（正如上面例子所示），使用时，需要先写出基本的元素标签，并通过 is 属性指定custom element的名称。例如<p is="word-count">, 或者 document.createElement("p", { is: "word-count" })。</div>
+    <div>
+        <button id="button">Show Toast</button>
+    </div>
+
+    <webc-toast id="toast" class="outer-class outer-class__hide" content="这是一个自定义的Toast组件"></webc-toast>
+
+    <script src="./dist/webc-toast.umd.js"></script>
+    <script>
+        var btn = document.getElementById('button');
+        btn.addEventListener('click', function() {
+            var toast = document.getElementById('toast')
+            var classList = toast.classList;
+            classList.toggle('outer-class__hide')
+        })
+    </script>
+</body>
+</html>
